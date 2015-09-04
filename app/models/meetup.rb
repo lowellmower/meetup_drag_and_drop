@@ -1,12 +1,13 @@
 class Meetup
 
   def self.get_events
-    params = { category: '1',
-      city: 'London',
-      country: 'GB',
+    params = {
+      category: '34',
+      zip: '11205',
       status: 'upcoming',
       format: 'json',
-      page: '50'}
+      page: '30'
+    }
     meetup_api = MeetupApi.new
     events = meetup_api.open_events(params)
     events
