@@ -6,8 +6,7 @@ class WelcomeController < ApplicationController
 
   def get_events
     @events = Meetup.get_events
-    byebug
-    redirect_to root_path
+    render json: @events
   end
 
 end
