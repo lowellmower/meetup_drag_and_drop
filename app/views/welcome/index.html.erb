@@ -1,6 +1,9 @@
 <h1>Welcome!</h1>
 
-<%= @events %>
+<div ng-app="meetApp">
+  <input type="text" ng-model="tester">
+  <p ng-bind="tester"></p>
+</div>
 
 <h3>To Doz:</h3>
 <ul>
